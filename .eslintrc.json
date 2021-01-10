@@ -19,10 +19,10 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "prettier",
-        "react-hooks",
-        "@typescript-eslint"
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "prettier"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
@@ -46,9 +46,6 @@
      ]
     },
     "settings": {
-      "react": {
-        "version": "detect"
-      },
       "import/resolver": {
         "typescript": {}
       }
