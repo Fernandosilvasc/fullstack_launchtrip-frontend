@@ -1,3 +1,4 @@
+// eslint-disable-next-line object-curly-newline
 import React, { createContext, useCallback, useState, useContext } from 'react';
 import api from '../services/api';
 
@@ -22,6 +23,7 @@ interface SignInCredentials {
 
 interface AuthContextData {
   user: UserDB;
+  // eslint-disable-next-line no-unused-vars
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
 }

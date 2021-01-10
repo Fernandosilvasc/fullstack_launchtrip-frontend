@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable arrow-parens */
 import styled, { css } from 'styled-components';
 
 import Tooltip from '../Tooltip/index';

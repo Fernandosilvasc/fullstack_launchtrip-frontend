@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ValidationError } from 'yup';
 
 interface Errors {

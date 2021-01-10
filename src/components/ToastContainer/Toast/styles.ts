@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { css } from 'styled-components';
 import { animated } from 'react-spring';
 
@@ -61,7 +62,7 @@ export const Container = styled(animated.div)<ContainerProps>`
     color: inherit;
   }
 
-  ${props => !props.hasDescription && css`
+  ${(props) => !props.hasDescription && css`
       align-items: center;
 
       svg {
