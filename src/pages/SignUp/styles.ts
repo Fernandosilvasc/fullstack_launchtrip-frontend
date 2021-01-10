@@ -18,7 +18,7 @@ export const Content = styled.div`
   place-content: center;
 
   img {
-    width: 50%;
+    width: 100%;
   }
 `;
 
