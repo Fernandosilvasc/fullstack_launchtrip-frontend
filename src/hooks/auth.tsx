@@ -46,8 +46,8 @@ export const AuthProvider: React.FC = ({ children }) => {
       email,
       password,
     });
-
     const { token, user } = response.data;
+
     localStorage.setItem('@LaunchTrip:token', token);
     localStorage.setItem('@LaunchTrip:user', JSON.stringify(user));
 
