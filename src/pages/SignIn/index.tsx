@@ -88,8 +88,6 @@ const SignIn: React.FC = () => {
               placeholder="Password"
             />
             <Button type="submit">Log In</Button>
-
-            {/* <a href="forgot">Forgot Password?</a> */}
           </Form>
           <Link to="/signUp">
             <FiLogIn />

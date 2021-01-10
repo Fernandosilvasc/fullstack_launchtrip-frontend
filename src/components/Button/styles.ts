@@ -16,4 +16,10 @@ export const Container = styled.button`
   &:hover {
     background: ${shade(0.2, '#DB345F')};
   }
+  @media screen and (max-width: 375px) {
+    /* height: 56px;
+    margin-top: 16px;
+    padding: 0 16px; */
+    width: 85%;
+  }
 `;

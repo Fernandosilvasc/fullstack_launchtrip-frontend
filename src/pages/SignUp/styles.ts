@@ -8,17 +8,22 @@ export const Container = styled.div`
 
   display: flex;
   align-items: stretch;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 700px;
+  max-width: 43.75rem;
   display: flex;
   align-items: center;
   place-content: center;
 
-  img {
-    width: 100%;
+  @media screen and (max-width: 1400px) {
+    margin: 3.125rem 0;
+    max-width: 100%;
   }
 `;
 
@@ -38,21 +43,29 @@ export const AnimationContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  img {
+    width: 100%;
+  }
+
   animation: ${appearFromRight} 1s;
 
   form {
-    margin: 80px 0;
-    width: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    width: 21.25rem;
     text-align: center;
 
     h1 {
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
     }
 
     a {
       color: #f4ede8;
       display: block;
-      margin-top: 24px;
+      margin-top: 1.5rem;
       text-decoration: none;
       transition: color 0.2s;
 
@@ -63,7 +76,7 @@ export const AnimationContainer = styled.div`
   }
   > a {
     color: #db345f;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     text-decoration: none;
     transition: color 0.2s;
     display: flex;
@@ -74,13 +87,25 @@ export const AnimationContainer = styled.div`
     }
 
     svg {
-      margin-right: 16px;
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    img {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    img {
+      width: 75%;
     }
   }
 `;
 
 export const Background = styled.div`
-  flex: 1;
+  width: 100%;
   background: url(${signUpBackgroundImg}) no-repeat center;
   background-size: cover;
 `;
